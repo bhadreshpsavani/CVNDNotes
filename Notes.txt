@@ -5,4 +5,6 @@ Fouriour Transform:
 
 Canny Edge Detector: widely used, accuarate edge detection algorithm
     internally: Gaussian Blur-> Sobels Filters -> Non- Maximum Suppression -> Historesis Thresholding
+
+Hough Transformation: Hough on the edge-detected image is used after canny edge detection to make continues line 
     
