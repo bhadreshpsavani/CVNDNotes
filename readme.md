@@ -118,4 +118,4 @@ Eliminates the above limitations
 
 [Notebook of HOGs Concept](https://github.com/udacity/CVND_Exercises/blob/master/1_4_Feature_Vectors/3_1.%20HOG.ipynb)
 
-[Example with Example](https://github.com/udacity/CVND_Exercises/blob/master/1_4_Feature_Vectors/3_2.%20HOG%20Examples.ipynb)
+[Example](https://github.com/udacity/CVND_Exercises/blob/master/1_4_Feature_Vectors/3_2.%20HOG%20Examples.ipynb)
