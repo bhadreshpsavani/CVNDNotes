@@ -2,12 +2,13 @@
 
 ## Convolution Filter Edge Detection: 
 
-### Fouriour Transform:
+### 1. Fouriour Transform:
 * Fouriour Transformation is used in CV to transform Image(Spatial) domain to freq domain
 * it can help to visualize changes(Freq) in the images 
+
 [Notebook](https://github.com/udacity/CVND_Exercises/blob/master/1_2_Convolutional_Filters_Edge_Detection/1.%20Fourier%20Transform.ipynb)
 
-### Canny Edge Detector: 
+### 2. Canny Edge Detector: 
 Widely used, accurate edge detection algorithm
 internally: Gaussian Blur-> Sobels Filters -> Non- Maximum Suppression -> Historesis Thresholding
 ```
@@ -17,15 +18,14 @@ edges = cv2.Canny(gray, lower, upper)
 ```
 [Notebook](https://github.com/udacity/CVND_Exercises/blob/master/1_2_Convolutional_Filters_Edge_Detection/5.%20Canny%20Edge%20Detection.ipynb)
 
-### Hough Transformation: 
+### 3. Hough Transformation: 
 Used to detect line, circles and other shapes 
 
-*[HoughLines Notebook](https://github.com/udacity/CVND_Exercises/blob/master/1_2_Convolutional_Filters_Edge_Detection/6_1.%20Hough%20lines.ipynb)
+* [HoughLines Notebook](https://github.com/udacity/CVND_Exercises/blob/master/1_2_Convolutional_Filters_Edge_Detection/6_1.%20Hough%20lines.ipynb)
 
-*[HoughCircles Notebook](https://github.com/udacity/CVND_Exercises/blob/master/1_2_Convolutional_Filters_Edge_Detection/6_2.%20Hough%20circles%2C%20agriculture.ipynb)
-[Notebook]()
+* [HoughCircles Notebook](https://github.com/udacity/CVND_Exercises/blob/master/1_2_Convolutional_Filters_Edge_Detection/6_2.%20Hough%20circles%2C%20agriculture.ipynb)
 
-### Cascade Classifier: 
+### 4. Cascade Classifier: 
 
 Used to detect object
 
@@ -40,7 +40,7 @@ faces = face_cascade.detectMultiScale(image, scaleFactor, minNeighbors)
 
 ## Types of Feature Image Segmentation:
  
-### Harris Corner Detector:
+### 1. Harris Corner Detector:
 
 To Detect Corner
 
@@ -50,7 +50,7 @@ dst = cv2.cornerHarris(gray_img, blockSize, kSize, k)
 ```
 [Notebook](https://github.com/udacity/CVND_Exercises/blob/master/1_3_Types_of_Features_Image_Segmentation/1.%20Harris%20Corner%20Detection.ipynb)
 
-### Find Countour:
+### 2. Find Countour:
 
 To findContours
 
@@ -60,7 +60,7 @@ retval, contours, hierarchy = cv2.findContours(binary, cv2.RETR_TREE, cv2.CHAIN_
 ```
 [Notebook](https://github.com/udacity/CVND_Exercises/blob/master/1_3_Types_of_Features_Image_Segmentation/2.%20Contour%20detection%20and%20features.ipynb)
 
-### K-Mean Clustering:
+### 3. K-Mean Clustering:
 
 Devide image based on clusters
 
@@ -111,4 +111,11 @@ Applications:
 * It Works well for face detection
 
 Limitation: 
-*  It can not be used for general object detection like pedestrian because of varing clothing and other conditions
+*  It can not be used for general object detection like pedestrian detection because of varing clothing and other conditions
+
+### HOGs (Histogram of Oriented Gradient): 
+Eliminates the above limitations
+
+[Notebook of HOGs Concept](https://github.com/udacity/CVND_Exercises/blob/master/1_4_Feature_Vectors/3_1.%20HOG.ipynb)
+
+[Notebook with Example](https://github.com/udacity/CVND_Exercises/blob/master/1_4_Feature_Vectors/3_2.%20HOG%20Examples.ipynb)
