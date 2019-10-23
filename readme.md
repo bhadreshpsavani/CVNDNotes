@@ -47,7 +47,7 @@ dst = cv2.cornerHarris(gray_img, blockSize, kSize, k)
 
 ### [Find Countour](https://github.com/udacity/CVND_Exercises/blob/master/1_3_Types_of_Features_Image_Segmentation/2.%20Contour%20detection%20and%20features.ipynb):
 
-to findContours
+To findContours
 
 ```
 # Find contours from thresholded, binary image
@@ -56,7 +56,7 @@ retval, contours, hierarchy = cv2.findContours(binary, cv2.RETR_TREE, cv2.CHAIN_
 
 ### [K-Mean Clustering](https://github.com/udacity/CVND_Exercises/blob/master/1_3_Types_of_Features_Image_Segmentation/3.%20K-means.ipynb):
 
-devide image based on clusters
+Devide image based on clusters
 
 ```
 # define stopping criteria
@@ -67,3 +67,36 @@ criteria = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 100, 0.2)
 k = 3
 retval, labels, centers = cv2.kmeans(pixel_vals, k, None, criteria, 10, cv2.KMEANS_RANDOM_CENTERS)
 ```
+
+## Object Detection
+
+### ORBs Algorithm(Oriented Fast and Rotated Brief):
+Fast- Feature Detection
+Brief- Vector Creation
+Used to identify Feature Vector in an Image which is used to detect object
+
+#### Fast (Features From Accelerated Segments Test):
+Used to get Keypoints
+#### BRIEF (Binary Robust Independent Elementary Features):
+Used to get Binary Vector From Keypoint
+
+* ORBs is Scale and Rotational Invarient
+
+Quick Note: 
+How to Downsample Image?
+```
+#downsample 1/2 of image
+level_1 = cv2.pyrDown(image)
+#downsample 1/4 of image
+level_2 = cv2.pyrDown(level_1)
+#downsample 1/8 of image
+level_3 = cv2.pyrDown(level_2)
+#and so on...
+```
+
+Applications: 
+* To detect Object in realtime video streaming.
+* It Works well for face detection
+
+Limitation: 
+*  It can not be used for general object detection like pedestrian because of varing clothing and other conditions
