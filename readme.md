@@ -10,6 +10,7 @@
 
 ### 2. Canny Edge Detector: 
 Widely used, accurate edge detection algorithm
+
 internally: Gaussian Blur-> Sobels Filters -> Non- Maximum Suppression -> Historesis Thresholding
 ```
 lower = 0
