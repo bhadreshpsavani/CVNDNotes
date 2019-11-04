@@ -132,5 +132,9 @@ The idea being that, instead of just normalising the inputs to the network, we n
 * Makes more Activation function viable
 * Simplifies the creation of deep networks
 * Provides more Regulation
+
 [Beautiful Article on Batch Normalization](https://medium.com/deeper-learning/glossary-of-deep-learning-batch-normalisation-8266dcd2fa82##targetText=Using%20batch%20normalisation%20allows%20much,to%20the%20initial%20starting%20weights)
+
+### SmoothL1Loss: 
+It is used for box regression on some object detection system
 
