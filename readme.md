@@ -120,3 +120,17 @@ Eliminates the above limitations
 [Notebook of HOGs Concept](https://github.com/udacity/CVND_Exercises/blob/master/1_4_Feature_Vectors/3_1.%20HOG.ipynb)
 
 [Example](https://github.com/udacity/CVND_Exercises/blob/master/1_4_Feature_Vectors/3_2.%20HOG%20Examples.ipynb)
+
+## CNN
+
+#### What is batch Normalization?
+The idea being that, instead of just normalising the inputs to the network, we normalise the inputs to layers within the network. It’s called “batch” normalization because during training, we normalise the activations of the previous layer for each batch, i.e. apply a transformation that maintains the mean activation close to 0 and the activation standard deviation close to 1.
+#### Benefits:
+* Networks train faster
+* Allows Higher Learning rate
+* Makes weights more easiler to intialize
+* Makes more Activation function viable
+* Simplifies the creation of deep networks
+* Provides more Regulation
+[Beautiful Article on Batch Normalization](https://medium.com/deeper-learning/glossary-of-deep-learning-batch-normalisation-8266dcd2fa82##targetText=Using%20batch%20normalisation%20allows%20much,to%20the%20initial%20starting%20weights)
+
