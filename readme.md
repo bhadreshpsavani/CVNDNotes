@@ -138,7 +138,7 @@ The idea being that, instead of just normalising the inputs to the network, we n
 ### SmoothL1Loss: 
 It is used for box regression on some object detection system
 
-### Adam algorithm :###
+### Adam algorithm : ###
 Here are some of the benefits of the Adam algorithm:
 
 * Straightforward to implement
