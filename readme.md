@@ -138,3 +138,14 @@ The idea being that, instead of just normalising the inputs to the network, we n
 ### SmoothL1Loss: 
 It is used for box regression on some object detection system
 
+### Adam algorithm :###
+Here are some of the benefits of the Adam algorithm:
+
+* Straightforward to implement
+* Computationally efficient
+* Little memory requirements
+* invariant to diagonal rescale of the gradients
+* Well suited for problems that are large in terms of data and/or parameters
+* Appropriate for non-stationary objectives
+* Appropriate for problems with very noisy/or sparse gradients
+* Hyper-parameters have intuitive interpretation and typically require little tuning
