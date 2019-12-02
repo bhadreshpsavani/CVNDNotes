@@ -157,6 +157,9 @@ Finding location of each object in the image
 
 ### Regression Losses ###
 * L1Loss: Distance b/w Predicted and True Points, Negligible for small error value
+
 * MSELoss: Mean Square Error b/w object of Predicted and True points, emplifies big error
+MSELoss is calculated by avg(sqare(t-p)) points
+
 * SmoothL1Loss: For Small Error uses MSELoss and for High loss uses L1Loss
 
