@@ -149,3 +149,14 @@ Here are some of the benefits of the Adam algorithm:
 * Appropriate for non-stationary objectives
 * Appropriate for problems with very noisy/or sparse gradients
 * Hyper-parameters have intuitive interpretation and typically require little tuning
+
+## Advanced CNN ##
+
+### Localization in the Image : ###
+Finding location of each object in the image
+
+### Regression Losses ###
+* L1Loss: Distance b/w Predicted and True Points, Negligible for small error value
+* MSELoss: Mean Square Error b/w object of Predicted and True points, emplifies big error
+* SmoothL1Loss: For Small Error uses MSELoss and for High loss uses L1Loss
+
