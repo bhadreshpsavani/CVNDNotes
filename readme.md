@@ -163,7 +163,23 @@ MSELoss is calculated by avg(sqare(t-p)) points
 
 * SmoothL1Loss: For Small Error uses MSELoss and for High loss uses L1Loss
 
+## Region Proposal : ##
+generate regions only for the area that might be object
+
 #### R-CNN : #### 
 R-CNN are used in Tracking(Detecting and Recognizing) Object in Motion 
+process each region individually
+Slow
+
 #### Fast R-CNN ####
+Process image only once through convoution layer and then selectively process other region
+ROIPooling
+Train fast compare to RCNN
+Slower for test images
+still looks at unwanted images
+
 #### FasterR-CNN ####
+Idea is to decrease time to form regional proposal
+Has seperate Regional Proposal Network for this purpose
+This Regions goes under binary classification of object/Non Object
+Fastest compare to earlier networks
