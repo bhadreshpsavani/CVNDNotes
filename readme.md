@@ -186,3 +186,14 @@ Fastest compare to earlier networks
 
 
 [Article on RCNN](https://towardsdatascience.com/deep-learning-for-object-detection-a-comprehensive-review-73930816d8d9)
+
+
+YOLO(You Only Look Once)
+IoU(Intersection over Union): Inetersection/Union of Regions (range(0,1))
+
+Non Maximal Suppression: 
+Only select Regions with high Pc value
+used to minimize no of regions
+
+Anchor Boxes:
+To select multiple objects having same grid cell as a center point
