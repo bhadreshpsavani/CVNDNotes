@@ -197,3 +197,14 @@ used to minimize no of regions
 
 Anchor Boxes:
 To select multiple objects having same grid cell as a center point
+
+Temporal Dependencies: Dependency over time
+
+### FFNN ###
+Its Simple NN
+FeedForward Neural Network are unable to detect Temporal Dependencies
+
+### RNN ### 
+Not Only Current Input but also past input
+
+all the simple RNN Suffors Vanishing Gradient Problem in which contribution of information decreases geometrically over time.
