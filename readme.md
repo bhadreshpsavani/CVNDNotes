@@ -208,3 +208,6 @@ FeedForward Neural Network are unable to detect Temporal Dependencies
 Not Only Current Input but also past input
 
 all the simple RNN Suffors Vanishing Gradient Problem in which contribution of information decreases geometrically over time.
+
+### Exploding Gradient ###
+Simple Solution to the explooding Gradient Problem is gradient clipping
