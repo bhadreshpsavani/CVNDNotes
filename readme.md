@@ -217,3 +217,33 @@ While using LSTM we can train 1000 time step
 
 ### LSTM ###
 Network Architecture is very similar to RNN only diffrenece is Neuron is replace by LSTM cell
+
+### Hyperparameters: ###
+1. Optimizer Hyperparameter
+2. Model Hyperparameter
+
+Optimizer Hyperparameter:
+1. Learning Rate:
+Validation Error: Decreasing During Training -> Learning Rate: Good
+Validation Error: Decreasing too slowly -> Learning Rate: Bad (Needs to Increase)
+Validation Error: Increasing-> Learning Rate: Bad (Needs to Decrease)
+
+2. Batch Size:
+require more memory for comuptation
+Training speed decreases
+1,2,4,8,16 - too small
+32, 64, 128, 256 - ideal
+512, 1024, 2048 -too large
+
+3. No of epochs:
+Watch the Validation loss, early stopping
+
+Model Hyperparameter
+1. No of Hidden Units: 
+Model is Overfitting - Decrease Hidden Units for Regularization
+More is always better unless computation limit or overfits
+
+2. Choice of LSTM/GRU: try both over a set of data
+
+3. Embedding sizes:
+While some tasks show reasonable performance with embedding sizes between 50-200, it's not unusual to see it go up 500 or even 1000.
