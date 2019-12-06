@@ -211,3 +211,9 @@ all the simple RNN Suffors Vanishing Gradient Problem in which contribution of i
 
 ### Exploding Gradient ###
 Simple Solution to the explooding Gradient Problem is gradient clipping
+
+We can not use RNN if our network has more than 9 time step because of vanishing gradient problem.
+While using LSTM we can train 1000 time step
+
+### LSTM ###
+Network Architecture is very similar to RNN only diffrenece is Neuron is replace by LSTM cell
