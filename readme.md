@@ -247,3 +247,11 @@ More is always better unless computation limit or overfits
 
 3. Embedding sizes:
 While some tasks show reasonable performance with embedding sizes between 50-200, it's not unusual to see it go up 500 or even 1000.
+
+4. HiddenState: Capacity of memory of the cell
+Bigger the Hidden state more will be the capacity
+More Hidden State also requires more computation resources
+
+
+Attention/The Transformers:
+This Model has extra layer named Attention layer which helps to pay attention to other words in the input sequence it will prevent translation of input word by word. 
