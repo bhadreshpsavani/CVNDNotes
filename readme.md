@@ -256,5 +256,10 @@ More Hidden State also requires more computation resources
 Attention/The Transformers:
 This Model has extra layer named Attention layer which helps to pay attention to other words in the input sequence it will prevent translation of input word by word. 
 
+### Object In Motion ###
 
 SLAM(Symultanious Localization and Mapping): A technique used in Self  Driving Cars for detection of object in motion
+
+Optical Flow Rules for Two consecutive frames:
+1. Pixel intensities stay consistance between frames
+2. Neighboring pixels have simliar motion
