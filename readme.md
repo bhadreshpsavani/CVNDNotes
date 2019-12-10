@@ -255,3 +255,6 @@ More Hidden State also requires more computation resources
 
 Attention/The Transformers:
 This Model has extra layer named Attention layer which helps to pay attention to other words in the input sequence it will prevent translation of input word by word. 
+
+
+SLAM(Symultanious Localization and Mapping): A technique used in Self  Driving Cars for detection of object in motion
