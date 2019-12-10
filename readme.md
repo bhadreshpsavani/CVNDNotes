@@ -276,3 +276,7 @@ Applications:
 
 #### Brighness Consistency Assumption ####
 In one frame we have same intensity of pixel value, if we compare with the next time frame pixel intensity
+
+#### Localization ####
+GPS is 10m accurate
+How can we know were we are with 10cm of accuracy that the quation of localization. -Sebastian Thrun
