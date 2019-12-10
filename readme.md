@@ -260,6 +260,19 @@ This Model has extra layer named Attention layer which helps to pay attention to
 
 SLAM(Symultanious Localization and Mapping): A technique used in Self  Driving Cars for detection of object in motion
 
+#### Optical Flow ####
+
 Optical Flow Rules for Two consecutive frames:
 1. Pixel intensities stay consistance between frames
 2. Neighboring pixels have simliar motion
+
+Tracking a point provides information about the speed of movement and the data that can be used to provide future location of the object
+
+Applications: 
+* Hand Gesture Recognition
+* Track Vehicle Movement
+* Obstacle avoiding in SelfDrving Cars
+* Eye Tracking in VR 
+
+#### Brighness Consistency Assumption ####
+In one frame we have same intensity of pixel value, if we compare with the next time frame pixel intensity
