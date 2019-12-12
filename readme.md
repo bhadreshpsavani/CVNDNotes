@@ -278,5 +278,17 @@ Applications:
 In one frame we have same intensity of pixel value, if we compare with the next time frame pixel intensity
 
 #### Localization ####
-GPS is 10m accurate
-How can we know were we are with 10cm of accuracy that the quation of localization. -Sebastian Thrun
+GPS is 10m error prone
+How can we know were we are with 10cm of error that the quation of localization. -Sebastian Thrun
+
+How we can achieve this using math should be quite intersting!!
+
+Fun Learning :
+why we call % as modulo, it never generate negavative number 
+say -1%5?
+its 4
+this can be really helpful algorithm in list element shifting 
+p=[0 1 0 0 0]
+`q=[p[(i-U)%len(p)] for i in range(len(p))]`
+q=[0 0 1 0 0]
+
